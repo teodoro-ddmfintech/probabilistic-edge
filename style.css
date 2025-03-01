@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+.cta-button {
+    background: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background: #d68910;
+}
+
+/* Sections */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.section {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Subscribe Section */
+.why-subscribe {
+    background: #fff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-subscribe ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.why-subscribe li {
+    margin-bottom: 10px;
+}
+
+/* Newsletter */
+.newsletter-section {
+    background: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #f39c12;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-section button {
+    background: #f39c12;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.newsletter-section button:hover {
+    background: #d68910;
+}
+
+/* Testimonials Section */
+.depoimentos {
+    background: #fff;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 40px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px;
+}
+
+/* Free eBook Section */
+.ebook-section {
+    background: #fff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #bbb;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Adding a fadeIn Class */
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+/* Adding a fade-in effect to containers */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* Mobile Specific Adjustments */
+
+/* Responsive layout for smaller devices */
+@media screen and (max-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack content vertically */
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .newsletter-section input {
+        width: 100%; /* Make input fields full-width */
+    }
+
+    .why-subscribe {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .why-subscribe ul {
+        font-size: 16px; /* Adjust font size for mobile readability */
+    }
+
+    .why-subscribe li {
+        margin-bottom: 8px; /* Reduce spacing for compactness */
+    }
+
+    .testimonials {
+        display: block; /* Stack testimonials vertically */
+    }
+
+    .testimonials blockquote {
+        margin-bottom: 20px; /* Add margin for spacing between quotes */
+    }
+
+    header img {
+        width: 30px; /* Reduce logo size for mobile */
+        height: 30px;
+    }
+
+    footer {
+        padding: 15px; /* Smaller footer padding on mobile */
+    }
+
+    /* Make ebook section more responsive */
+    .ebook-section {
+        padding: 30px 20px;
+        margin: 20px auto;
+        max-width: 100%; /* Full width on mobile */
+    }
+}
