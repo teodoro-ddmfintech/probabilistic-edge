@@ -214,7 +214,8 @@ footer {
     }
 
     .testimonials {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .testimonials blockquote {
