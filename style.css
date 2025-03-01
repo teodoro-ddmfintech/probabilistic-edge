@@ -188,7 +188,7 @@ footer {
 /* Mobile Specific Adjustments */
 
 /* Responsive layout for smaller devices */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 760px) {
     .container {
         grid-template-columns: 1fr; /* Stack content vertically */
         padding: 20px;
@@ -228,7 +228,7 @@ footer {
     }
 
     footer {
-        padding: 15px; /* Smaller footer padding on mobile */
+        padding: 10px; /* Smaller footer padding on mobile */
     }
 
     /* Make ebook section more responsive */
