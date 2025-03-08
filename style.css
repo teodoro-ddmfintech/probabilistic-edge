@@ -189,6 +189,10 @@ footer {
 
 /* Responsive layout for smaller devices */
 @media screen and (max-width: 760px) {
+    .logo {
+        font-size: 15px;
+    }
+    
     .container {
         grid-template-columns: 1fr; /* Stack content vertically */
         padding: 20px;
@@ -196,13 +200,13 @@ footer {
     }
 
     .newsletter-section input {
-        width: 100%; /* Make input fields full-width */
+        width: 80%; /* Make input fields full-width */
     }
 
     .why-subscribe {
         padding: 20px;
         margin: 20px auto;
-        max-width: 100%; /* Full width on mobile */
+        max-width: 80%; /* Full width on mobile */
     }
 
     .why-subscribe ul {
@@ -235,6 +239,6 @@ footer {
     .ebook-section {
         padding: 30px 20px;
         margin: 20px auto;
-        max-width: 100%; /* Full width on mobile */
+        max-width: 80%; /* Full width on mobile */
     }
 }
