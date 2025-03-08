@@ -217,6 +217,10 @@ footer {
         margin-bottom: 8px; /* Reduce spacing for compactness */
     }
 
+    #subscribe {
+        max-width: 80%;
+    }
+
     .testimonials {
         grid-template-columns: 1fr;
         text-align: center;
